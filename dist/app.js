@@ -13194,16 +13194,16 @@ var PS = {};
       };
       var renderLayoutHeader = Halogen_HTML_Elements.header([ Halogen_HTML_Properties.classes([ Halogen_MDL_Layout.cl.layoutHeader ]) ])([ Halogen_HTML_Elements.div([ Halogen_HTML_Properties.classes([ Halogen_MDL_Layout.cl.layoutHeaderRow ]) ])([ Halogen_HTML_Elements.span([ Halogen_HTML_Properties.classes([ Halogen_MDL_Layout.cl.layoutTitle ]) ])([ Halogen_HTML_Core.text("Halogen MDL") ]), Halogen_HTML_Elements.div([ Halogen_HTML_Properties.classes([ Halogen_MDL_Layout.cl.layoutSpacer ]) ])([  ]), Halogen_HTML_Elements.nav([ Halogen_HTML_Properties.classes([ Halogen_MDL_Navigation.cl.navigation, Halogen_MDL_Layout.cl.layoutLargeScreenOnly ]) ])([ renderLayoutHeaderLink({
           href: "#",
-          text: "Link 1"
+          text: "HeaderLink 1"
       }), renderLayoutHeaderLink({
           href: "#",
-          text: "Link 2"
+          text: "HeaderLink 2"
       }), renderLayoutHeaderLink({
           href: "#",
-          text: "Link 3"
+          text: "HeaderLink 3"
       }), renderLayoutHeaderLink({
           href: "#",
-          text: "Link 4"
+          text: "HeaderLink 4"
       }) ]) ]) ]);
       var renderLayoutDrawerLink = function (route) {
           return Halogen_HTML_Elements.a([ Halogen_HTML_Properties.href(Route.href(route)), Halogen_HTML_Properties.classes([ Halogen_MDL_Navigation.cl.navigationLink ]), Halogen_HTML_Events.onClick(Halogen_HTML_Events.input_(OnNavClick.create)) ])([ Halogen_HTML_Core.text(Route.label(route)) ]);
@@ -13305,7 +13305,7 @@ var PS = {};
       };
       var renderLayoutDrawer = Halogen_HTML_Elements.div([ Halogen_HTML_Properties.classes([ Halogen_MDL_Layout.cl.layoutDrawer ]), Halogen_HTML_Properties.ref("mdl-layout-drawer") ])([ Halogen_HTML_Elements.span([ Halogen_HTML_Properties.classes([ Halogen_MDL_Layout.cl.layoutTitle ]) ])([ Halogen_HTML_Core.text("Halogen MDL") ]), Halogen_HTML_Elements.nav([ Halogen_HTML_Properties.classes([ Halogen_MDL_Navigation.cl.navigation ]) ])([ renderLayoutDrawerLink(Route.Home.value), renderLayoutDrawerLink(Route.Buttons.value), renderLayoutDrawerLink(Route.Cards.value) ]) ]);
       var render = function (state) {
-          return Halogen_HTML_Elements.div([ Halogen_HTML_Properties.class_(Halogen_MDL_Layout.cl.layoutContainer) ])([ Halogen_HTML_Elements.div([ Halogen_HTML_Properties.classes([ Halogen_MDL_Layout.cl.layout, Halogen_MDL_Layout.cl.jsLayout, Halogen_MDL_Layout.cl.layoutFixedHeader, Halogen_MDL_Layout.cl.layoutFixedDrawer ]), Halogen_HTML_Properties.ref("mdl-layout-ref") ])([ renderLayoutHeader, renderLayoutDrawer, renderLayoutContent(state), renderSpacer, renderMegaFooter ]) ]);
+          return Halogen_HTML_Elements.div([ Halogen_HTML_Properties.class_(Halogen_MDL_Layout.cl.layoutContainer) ])([ Halogen_HTML_Elements.div([ Halogen_HTML_Properties.classes([ Halogen_MDL_Layout.cl.layout, Halogen_MDL_Layout.cl.jsLayout, Halogen_MDL_Layout.cl.layoutFixedHeader ]), Halogen_HTML_Properties.ref("mdl-layout-ref") ])([ renderLayoutHeader, renderLayoutDrawer, renderLayoutContent(state), renderSpacer, renderMegaFooter ]) ]);
       };
       return Halogen_Component.lifecycleParentComponent(Data_Either.ordEither(ordDemoHomeSlot)(Data_Either.ordEither(ordDemoButtonsSlot)(Data_Either.ordEither(ordDemoCardsSlot)(Data_Ord.ordVoid))))({
           initialState: initialState,

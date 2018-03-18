@@ -141,10 +141,10 @@ demoContainer =
         , HH.div [ HP.classes [ Layout.cl.layoutSpacer ] ] []
         , HH.nav
           [ HP.classes [ Navigation.cl.navigation, Layout.cl.layoutLargeScreenOnly ] ]
-          [ renderLayoutHeaderLink { href: "#", text: "Link 1" }
-          , renderLayoutHeaderLink { href: "#", text: "Link 2" }
-          , renderLayoutHeaderLink { href: "#", text: "Link 3" }
-          , renderLayoutHeaderLink { href: "#", text: "Link 4" }
+          [ renderLayoutHeaderLink { href: "#", text: "HeaderLink 1" }
+          , renderLayoutHeaderLink { href: "#", text: "HeaderLink 2" }
+          , renderLayoutHeaderLink { href: "#", text: "HeaderLink 3" }
+          , renderLayoutHeaderLink { href: "#", text: "HeaderLink 4" }
           ]
         ]
       ]
