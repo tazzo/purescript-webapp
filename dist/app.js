@@ -13187,7 +13187,7 @@ var PS = {};
           if (state.currentRoute instanceof Route.Cards) {
               return Halogen_HTML["slot'"](cpDemoCards)(DemoCardsSlot.value)(DemoCards.demoCards)(DemoCards.init(Data_Unit.unit))(Halogen_HTML_Events.input(OnDemoCardsMessage.create));
           };
-          throw new Error("Failed pattern match at DemoContainer line 197, column 29 - line 219, column 38: " + [ state.currentRoute.constructor.name ]);
+          throw new Error("Failed pattern match at DemoContainer line 208, column 29 - line 230, column 38: " + [ state.currentRoute.constructor.name ]);
       };
       var renderLayoutHeaderLink = function (link) {
           return Halogen_HTML_Elements.a([ Halogen_HTML_Properties.href(link.href), Halogen_HTML_Properties.classes([ Halogen_MDL_Navigation.cl.navigationLink ]) ])([ Halogen_HTML_Core.text(link.text) ]);
@@ -13286,7 +13286,7 @@ var PS = {};
                       if (v1 instanceof Data_Maybe.Nothing) {
                           return Control_Applicative.pure(Halogen_Query_HalogenM.applicativeHalogenM)(Data_Unit.unit);
                       };
-                      throw new Error("Failed pattern match at DemoContainer line 270, column 7 - line 272, column 29: " + [ v1.constructor.name ]);
+                      throw new Error("Failed pattern match at DemoContainer line 281, column 7 - line 283, column 29: " + [ v1.constructor.name ]);
                   })())(function () {
                       return Control_Applicative.pure(Halogen_Query_HalogenM.applicativeHalogenM)(v.value0);
                   });
@@ -13301,9 +13301,9 @@ var PS = {};
           if (v instanceof OnDemoCardsMessage) {
               return Control_Applicative.pure(Halogen_Query_HalogenM.applicativeHalogenM)(v.value1);
           };
-          throw new Error("Failed pattern match at DemoContainer line 256, column 10 - line 279, column 12: " + [ v.constructor.name ]);
+          throw new Error("Failed pattern match at DemoContainer line 267, column 10 - line 290, column 12: " + [ v.constructor.name ]);
       };
-      var renderLayoutDrawer = Halogen_HTML_Elements.div([ Halogen_HTML_Properties.classes([ Halogen_MDL_Layout.cl.layoutDrawer ]), Halogen_HTML_Properties.ref("mdl-layout-drawer") ])([ Halogen_HTML_Elements.span([ Halogen_HTML_Properties.classes([ Halogen_MDL_Layout.cl.layoutTitle ]) ])([ Halogen_HTML_Core.text("Halogen MDL") ]), Halogen_HTML_Elements.nav([ Halogen_HTML_Properties.classes([ Halogen_MDL_Navigation.cl.navigation ]) ])([ renderLayoutDrawerLink(Route.Home.value), renderLayoutDrawerLink(Route.Buttons.value), renderLayoutDrawerLink(Route.Cards.value) ]) ]);
+      var renderLayoutDrawer = Halogen_HTML_Elements.div([ Halogen_HTML_Properties.classes([ Halogen_MDL_Layout.cl.layoutDrawer ]), Halogen_HTML_Properties.ref("mdl-layout-drawer") ])([ Halogen_HTML_Elements.span([ Halogen_HTML_Properties.classes([ Halogen_MDL_Layout.cl.layoutTitle ]) ])([ Halogen_HTML_Core.text("Halogen MDL") ]), Halogen_HTML_Elements.nav([ Halogen_HTML_Properties.classes([ Halogen_MDL_Navigation.cl.navigation ]) ])([ renderLayoutDrawerLink(Route.Home.value), renderLayoutDrawerLink(Route.Buttons.value), renderLayoutDrawerLink(Route.Cards.value) ]), Halogen_HTML_Elements.span([ Halogen_HTML_Properties.classes([ Halogen_MDL_Layout.cl.layoutTitle ]) ])([ Halogen_HTML_Core.text("Github") ]), Halogen_HTML_Elements.nav([ Halogen_HTML_Properties.classes([ Halogen_MDL_Navigation.cl.navigation ]) ])([ Halogen_HTML_Elements.a([ Halogen_HTML_Properties.href("https://github.com/tazzo/purescript-webapp"), Halogen_HTML_Properties.classes([ Halogen_MDL_Navigation.cl.navigationLink ]) ])([ Halogen_HTML_Core.text("source code") ]) ]) ]);
       var render = function (state) {
           return Halogen_HTML_Elements.div([ Halogen_HTML_Properties.class_(Halogen_MDL_Layout.cl.layoutContainer) ])([ Halogen_HTML_Elements.div([ Halogen_HTML_Properties.classes([ Halogen_MDL_Layout.cl.layout, Halogen_MDL_Layout.cl.jsLayout, Halogen_MDL_Layout.cl.layoutFixedHeader ]), Halogen_HTML_Properties.ref("mdl-layout-ref") ])([ renderLayoutHeader, renderLayoutDrawer, renderLayoutContent(state), renderSpacer, renderMegaFooter ]) ]);
       };

@@ -170,6 +170,17 @@ demoContainer =
         , renderLayoutDrawerLink Buttons
         , renderLayoutDrawerLink Cards
         ]
+        ,HH.span
+          [ HP.classes [ Layout.cl.layoutTitle ] ]
+          [ HH.text "Github" ]
+        , HH.nav
+          [ HP.classes [ Navigation.cl.navigation ] ]
+          [ HH.a
+            [ HP.href $ "https://github.com/tazzo/purescript-webapp"
+            , HP.classes [ Navigation.cl.navigationLink ]
+            ]
+            [ HH.text $ "source code" ]
+          ]
       ]
 
   renderLayoutDrawerLink :: Route -> DemoContainerHTML eff
