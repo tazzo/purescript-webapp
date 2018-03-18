@@ -1,6 +1,6 @@
 # Purescript Halogen Webapp (Material Design Lite)
 
-[Live demo](https://rawgit.com/andywhite37/purescript-halogen-mdl/master/examples/dist/index.html)
+[Live demo](https://github.com/tazzo/purescript-webapp/dist/index.html)
 
 ## Overview
 
